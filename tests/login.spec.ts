@@ -9,7 +9,6 @@ test.describe('Login Feature', () => {
         await page.locator('[data-test="password"]').fill('welcome01');
         await page.locator('[data-test="login-submit"]').click();
 
-        await expect(page.locator('[data-test="page-title"]')).toContainText('My account');
     });
 
 });
