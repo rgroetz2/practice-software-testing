@@ -1,4 +1,4 @@
-name: rgroetz_2ahdev_uitests_2ahtest
+name: ahdev2ahtest.yml
 on:
   workflow_dispatch:
 
