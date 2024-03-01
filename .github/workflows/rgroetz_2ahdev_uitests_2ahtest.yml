@@ -76,6 +76,6 @@ jobs:
             ls -la
             docker ps -a
             docker images
-          host: ${{ secrets.ahtest_ip }}
-          user: ${{ secrets.ahtest_user }}
+          host: ${{ secrets.HOST }}
+          user: ahprodte
           key: ${{ secrets.PRIVATE_KEY}}
