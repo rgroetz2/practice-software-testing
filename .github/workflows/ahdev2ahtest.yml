@@ -61,7 +61,7 @@ jobs:
         with:
           #name: playwright-report 
           name: screenshot.png
-          path: playwright-report/
+          path: playwright-report/screenshot.png
           retention-days: 10
           
   deploy2ahtest:
