@@ -27,5 +27,5 @@ jobs:
             docker images
           #host: ${{ secrets.HOST }}
           host: 109.176.250.82
-          user: ahtestuser
+          user: ahproduser
           key: ${{ secrets.PRIVATE_KEY}}
