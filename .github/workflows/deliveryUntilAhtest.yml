@@ -67,6 +67,7 @@ jobs:
     name: deploy2ahtest
     needs: [playwrightTestsAtAhdev]
     runs-on: ubuntu-latest    
+    environment: AH-Test
     steps:
       - name: Docker 
         uses: fifsky/ssh-action@master
