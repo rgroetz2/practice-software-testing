@@ -1,5 +1,7 @@
 name: deploy2ahdev.yml
 on:
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 concurrency: production_environment
