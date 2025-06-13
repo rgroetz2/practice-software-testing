@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,8 +6,13 @@ import {Component} from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+  showModal = false;
 
-  constructor() {
+  openModal(): void {
+    this.showModal = true;
   }
 
+  closeModal(): void {
+    this.showModal = false;
+  }
 }

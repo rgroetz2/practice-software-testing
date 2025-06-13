@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {CommonModule} from '@angular/common';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -25,6 +26,7 @@ import {DetailComponent as ProductDetailComponent} from './products/detail/detai
 import {NgHttpLoaderModule} from "ng-http-loader";
 import {NgxSliderModule} from "@angular-slider/ngx-slider";
 import {PagenotfoundComponent} from './shared/pagenotfound/pagenotfound.component';
+import {InfoModalComponent} from './footer/info-modal/info-modal.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import {PagenotfoundComponent} from './shared/pagenotfound/pagenotfound.componen
     CategoryComponent,
     OverviewComponent,
     ProductOverviewComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    InfoModalComponent
   ],
     imports: [
         BrowserModule,
@@ -53,7 +56,8 @@ import {PagenotfoundComponent} from './shared/pagenotfound/pagenotfound.componen
         NgxPaginationModule,
         NgxSliderModule,
         RouterLink,
-        RouterLink
+        RouterLink,
+        CommonModule
     ],
   providers: [UserAuthGuard, AdminAuthGuard, {
     provide: HTTP_INTERCEPTORS,
